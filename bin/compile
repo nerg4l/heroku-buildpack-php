@@ -479,6 +479,8 @@ export HEROKU_PHP_DEFAULT_RUNTIME_VERSION
 	fi
 }
 
+build_report::set_string failure_detail "$platform_stderr"
+
 build_report::stop_timer platform.prepare
 
 build_report::start_timer platform.install
